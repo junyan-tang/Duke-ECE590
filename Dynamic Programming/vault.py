@@ -44,7 +44,6 @@ def vault(matrix: list[list[int]]):
 if __name__ == "__main__":
     file_name = sys.argv[1]
     mat = parse(file_name)
-    time.perf_counter_ns()
     max_value, direction = vault(mat)
     result = []
     i, j = len(direction) - 1, len(direction[0]) - 1
